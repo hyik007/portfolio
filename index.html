@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hong Yik — Developer Portfolio</title>
+  <meta name="description" content="Hong Yik (hyik007) — building local-first AI tools. Portfolio and open-source projects." />
+  <meta property="og:title" content="Hong Yik — Developer Portfolio" />
+  <meta property="og:description" content="Building local-first AI tools. See my open-source projects." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">HY</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img id="avatar" class="avatar" alt="Hong Yik avatar" src="https://github.com/hyik007.png" />
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Hong Yik</h1>
+      <p class="tagline">I build <span class="grad">local-first AI tools</span> that make your data portable and private.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/hyik007" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+      <div class="stats" id="stats" aria-live="polite"></div>
+    </section>
+
+    <section id="featured" class="section">
+      <h2>Featured</h2>
+      <a class="featured-card" href="https://membridge.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div>
+          <h3>MemBridge — Universal AI Memory Teleport</h3>
+          <p>Move your identity, projects, preferences and rules between ChatGPT, Claude, Gemini, DeepSeek and coding agents in one click. 100% local, zero dependencies, with built-in secret redaction.</p>
+          <div class="tags"><span>JavaScript</span><span>Chrome Extension</span><span>CLI</span><span>Local-first</span></div>
+        </div>
+        <span class="go">Try live demo →</span>
+      </a>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>All Projects <small class="muted">(synced live from GitHub)</small></h2>
+      <div id="repo-grid" class="grid"><p class="muted">Loading repositories…</p></div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>I'm a developer focused on practical AI tooling: privacy-first, simple to use, and easy to install. I like shipping small tools that solve one real annoyance well, and I build in public.</p>
+      <ul class="skills">
+        <li>JavaScript / Node.js</li>
+        <li>Browser extensions</li>
+        <li>CLI tools</li>
+        <li>Vercel deployments</li>
+        <li>AI workflows</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>The best way to reach me is through GitHub: open an issue or a discussion on any project.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/hyik007" target="_blank" rel="noopener noreferrer">github.com/hyik007</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Hong Yik · Built with plain HTML/CSS/JS · Hosted on Vercel</footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

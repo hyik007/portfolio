@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hong Yik — Developer Portfolio</title>
-  <meta name="description" content="Hong Yik (hyik007) — building local-first AI tools. Portfolio and open-source projects." />
-  <meta property="og:title" content="Hong Yik — Developer Portfolio" />
-  <meta property="og:description" content="Building local-first AI tools. See my open-source projects." />
+  <title>Hong Yik â€” Developer Portfolio</title>
+  <meta name="description" content="Hong Yik (hyik007) â€” building local-first AI tools. Portfolio and open-source projects." />
+  <meta property="og:title" content="Hong Yik â€” Developer Portfolio" />
+  <meta property="og:description" content="Full-stack developer and AI systems builder. See my projects." />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -24,40 +24,60 @@
       <img id="avatar" class="avatar" alt="Hong Yik avatar" src="https://github.com/hyik007.png" />
       <p class="eyebrow">Hi, I'm</p>
       <h1>Hong Yik</h1>
-      <p class="tagline">I build <span class="grad">local-first AI tools</span> that make your data portable and private.</p>
+      <p class="tagline">Full-stack developer and <span class="grad">AI systems builder</span>. I ship AI-native web apps and smart automation.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">See my projects</a>
-        <a class="btn" href="https://github.com/hyik007" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://github.com/hyik007" target="_blank" rel="noopener noreferrer">GitHub â†—</a>
       </div>
       <div class="stats" id="stats" aria-live="polite"></div>
     </section>
 
     <section id="featured" class="section">
       <h2>Featured</h2>
-      <a class="featured-card" href="https://membridge.vercel.app" target="_blank" rel="noopener noreferrer">
-        <div>
-          <h3>MemBridge — Universal AI Memory Teleport</h3>
-          <p>Move your identity, projects, preferences and rules between ChatGPT, Claude, Gemini, DeepSeek and coding agents in one click. 100% local, zero dependencies, with built-in secret redaction.</p>
-          <div class="tags"><span>JavaScript</span><span>Chrome Extension</span><span>CLI</span><span>Local-first</span></div>
-        </div>
-        <span class="go">Try live demo →</span>
-      </a>
+      <div class="grid feat">
+        <a class="card big" href="https://membridge.vercel.app" target="_blank" rel="noopener noreferrer">
+          <h3>MemBridge</h3>
+          <p>Universal AI memory teleport: move your context, preferences and projects between ChatGPT, Claude, Gemini, DeepSeek and coding agents. 100% local with built-in secret redaction.</p>
+          <div class="tags"><span>JavaScript</span><span>Chrome Extension</span><span>CLI</span></div>
+          <span class="go">Live app →</span>
+        </a>
+        <a class="card big" href="https://feedyou-pos.vercel.app" target="_blank" rel="noopener noreferrer">
+          <h3>FeedYou POS</h3>
+          <p>AI-powered restaurant POS with counter ordering, QR table ordering, kitchen display and a dashboard.</p>
+          <div class="tags"><span>Laravel</span><span>PHP</span><span>Real-time KDS</span></div>
+          <span class="go">Live app →</span>
+        </a>
+        <a class="card big" href="https://ezorder-one.vercel.app" target="_blank" rel="noopener noreferrer">
+          <h3>EzOrder</h3>
+          <p>Full-stack digital ordering web app built with TypeScript and deployed on Vercel.</p>
+          <div class="tags"><span>TypeScript</span><span>Next.js</span></div>
+          <span class="go">Live app →</span>
+        </a>
+        <a class="card big" href="https://github.com/hyik007/kinderai" target="_blank" rel="noopener noreferrer">
+          <h3>KinderAI &amp; KinderSort</h3>
+          <p>Offline face-recognition photo sorter for teachers: automatically puts each event photo in the right student's folder.</p>
+          <div class="tags"><span>Python</span><span>Computer Vision</span><span>Offline</span></div>
+          <span class="go">View source →</span>
+        </a>
+        <a class="card big" href="https://github.com/hyik007/noot" target="_blank" rel="noopener noreferrer">
+          <h3>Noot</h3>
+          <p>A penguin that lives in your terminal. Cheers wins, screams NOOT NOOT at failures. Zero dependencies.</p>
+          <div class="tags"><span>JavaScript</span><span>CLI</span><span>Fun</span></div>
+          <span class="go">View source →</span>
+        </a>
+      </div>
     </section>
 
     <section id="projects" class="section">
       <h2>All Projects <small class="muted">(synced live from GitHub)</small></h2>
-      <div id="repo-grid" class="grid"><p class="muted">Loading repositories…</p></div>
+      <div id="repo-grid" class="grid"><p class="muted">Loading repositoriesâ€¦</p></div>
     </section>
 
     <section id="about" class="section">
       <h2>About</h2>
-      <p>I'm a developer focused on practical AI tooling: privacy-first, simple to use, and easy to install. I like shipping small tools that solve one real annoyance well, and I build in public.</p>
+      <p>I build AI systems and full-stack products: from restaurant POS platforms to offline computer-vision tools to AI memory portability. I like shipping fast, keeping interfaces calm, and letting clean architecture do the heavy lifting.</p>
       <ul class="skills">
-        <li>JavaScript / Node.js</li>
-        <li>Browser extensions</li>
-        <li>CLI tools</li>
-        <li>Vercel deployments</li>
-        <li>AI workflows</li>
+        <li>TypeScript</li><li>Next.js</li><li>Laravel / PHP</li><li>Python</li><li>Node.js</li><li>Computer Vision</li><li>Vercel</li>
       </ul>
     </section>
 
@@ -70,8 +90,9 @@
     </section>
   </main>
 
-  <footer class="footer">© <span id="year"></span> Hong Yik · Built with plain HTML/CSS/JS · Hosted on Vercel</footer>
+  <footer class="footer">Â© <span id="year"></span> Hong Yik Â· Built with plain HTML/CSS/JS Â· Hosted on Vercel</footer>
 
   <script src="./app.js"></script>
 </body>
 </html>
+
